@@ -18,24 +18,32 @@
 
 
 <body style='margin : 0px; overflow: hidden;'>
-  <a-scene embedded arjs='detectionMode: mono_and_matrix; matrixCodeType: 3x3;'>      
+  <a-scene arjs vr-mode-ui="enabled:false;" embedded gesture-detector>      
       <a-marker type='pattern' url="/Assets/Patterns/pattern-char1.patt">
-        <a-entity gltf-model="#char1" position="0 0 0" rotation="0 0 0" scale="0.5 0.5 0.5"></a-entity>
+        <a-entity gltf-model="#char1" position="0 0 0" rotation="0 0 0" scale="1 1 1"
+        animation = "property:rotation; from:0 0 0 ; to: 0 360 0; startEvents: touchstart;">
+          <a-animation></a-animation>
+        </a-entity>
       </a-marker>
 
       <a-marker type='pattern' url="/Assets/Patterns/pattern-char2.patt">
-        <a-entity gltf-model="#char2" position="0 0 0" rotation="0 0 0" scale="0.6 0.6 0.6"></a-entity>
+        <a-entity gltf-model="#char2" position="0 0 0" rotation="0 0 0" scale="1 1 1"
+        animation = "property:rotation; from:0 0 0 ; to: 0 360 0; startEvents: touchstart;"></a-entity>
       </a-marker>
       
       <a-marker type='pattern' url="/Assets/Patterns/pattern-char3.patt">
-        <a-entity gltf-model="#char3" position="0 0 0" rotation="0 0 0" scale="0.4 0.4 0.4"></a-entity>
+        <a-entity gltf-model="#char3" position="0 0 0" rotation="0 0 0" scale="1 1 1"
+        animation = "property:rotation; from:0 0 0 ; to: 0 360 0; startEvents: touchstart;"></a-entity>
       </a-marker>
       
       <a-marker type='pattern' url="/Assets/Patterns/pattern-char4.patt">
-        <a-entity gltf-model="#char4" position="0 0 0" rotation="0 0 0" scale="0.3 0.3 0.3"></a-entity>
+        <a-entity gltf-model="#char4" position="0 0 0" rotation="0 0 0" scale="1 1 1"
+        animation = "property:rotation; from:0 0 0 ; to: 0 360 0; startEvents: touchstart;"></a-entity>
       </a-marker>
 
-      <a-entity camera></a-entity>    
+      <a-entity camera>
+        
+      </a-entity>    
   </a-scene>
 </body>
 
