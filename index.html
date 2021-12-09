@@ -10,11 +10,11 @@
 </head>
 
 <a-assets>
-  <img id= logo src="Assets/Image/DoorAR.png"></img>
-  <a-asset-item id="char1" src="Assets/Models/char.gltf"></a-asset-item>
-  <a-asset-item id="char2" src="Assets/Models/char2.gltf"></a-asset-item>
-  <a-asset-item id="char3" src="Assets/Models/char3.gltf"></a-asset-item>
-  <a-asset-item id="char4" src="Assets/Models/char4.gltf"></a-asset-item>
+  <img id= logo src="/tugas-webxr-farrelmt/Assets/Image/DoorAR.png"></img>
+  <a-asset-item id="char1" src="/tugas-webxr-farrelmt/Assets/Models/char.gltf"></a-asset-item>
+  <a-asset-item id="char2" src="/tugas-webxr-farrelmt/Assets/Models/char2.gltf"></a-asset-item>
+  <a-asset-item id="char3" src="/tugas-webxr-farrelmt/Assets/Models/char3.gltf"></a-asset-item>
+  <a-asset-item id="char4" src="/tugas-webxr-farrelmt/Assets/Models/char4.gltf"></a-asset-item>
 </a-assets>
 
 
@@ -22,29 +22,34 @@
   <a-scene vr-mode-ui="enabled:false;" embedded arjs='detectionMode: mono_and_matrix; matrixCodeType: 3x3;'>      
       <!-- <a-image src="#logo" position="-4 2 -10" width="2" height="1"></a-image>   -->
 
-      <a-marker type='pattern' url="/Assets/Patterns/pattern-char1.patt">
+      <a-marker preset='hiro' url="/tugas-webxr-farrelmt/Assets/Patterns/pattern-char1.patt">
         <a-entity gltf-model="#char1" position="0 0 0" rotation="0 0 0" scale="1 1 1"
         animation__rotate = "property:rotation; from:0 0 0 ; to: 0 360 0; startEvents: mouseenter;"></a-entity>
       </a-marker>
 
-      <a-marker type='pattern' url="/Assets/Patterns/pattern-char2.patt">
+      <a-marker type='pattern' url="/tugas-webxr-farrelmt/Assets/Patterns/pattern-char1.patt">
+        <a-entity gltf-model="#char1" position="0 0 0" rotation="0 0 0" scale="1 1 1"
+        animation__rotate = "property:rotation; from:0 0 0 ; to: 0 360 0; startEvents: mouseenter;"></a-entity>
+      </a-marker>
+
+      <a-marker type='pattern' url="/tugas-webxr-farrelmt/Assets/Patterns/pattern-char2.patt">
         <a-entity gltf-model="#char2" position="0 0 0" rotation="0 0 0" scale="1 1 1"
         animation__rotate = "property:rotation; from:0 0 0 ; to: 0 360 0; startEvents: mouseenter;"></a-entity>
       </a-marker>
       
-      <a-marker type='pattern' url="/Assets/Patterns/pattern-char3.patt">
+      <a-marker type='pattern' url="/tugas-webxr-farrelmt/Assets/Patterns/pattern-char3.patt">
         <a-entity gltf-model="#char3" position="0 0 0" rotation="0 0 0" scale="1 1 1"
         animation__rotate = "property:rotation; from:0 0 0 ; to: 0 360 0; startEvents: mouseenter;"></a-entity>
       </a-marker>
       
-      <a-marker type='pattern' url="/Assets/Patterns/pattern-char4.patt">
+      <a-marker type='pattern' url="/tugas-webxr-farrelmt/Assets/Patterns/pattern-char4.patt">
         <a-entity gltf-model="#char4" position="0 0 0" rotation="0 0 0" scale="1 1 1"
         animation__rotate = "property:rotation; from:0 0 0 ; to: 0 360 0; startEvents: mouseenter;"></a-entity>
       </a-marker>
 
       <a-entity camera>
-        <a-cursor id="fuse-cursor" material="opacity: 0;" position="0 0 -1"></a-cursor>
-      <a-image src="/Assets/Image/Star.png" scale=".005 .005 .005" position="0 0 -.99"></a-image>
+        <!-- <a-cursor id="fuse-cursor" material="opacity: 0;" position="0 0 -1"></a-cursor>
+        <a-image src="/Assets/Image/Star.png" scale=".005 .005 .005" position="0 0 -.99"></a-image> -->
       </a-entity>    
   </a-scene>
 </body>
