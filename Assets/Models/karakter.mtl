@@ -1,0 +1,60 @@
+# Blender MTL File: 'Elaa.blend'
+# Material Count: 5
+
+newmtl Body
+Ns 225.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.754648 0.800000 0.659836
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd E:\\GameDev\\_Done\\Gemastik 14\\Substance Painter\\Ela Model_Body_BaseColor.png
+
+newmtl Eye
+Ns 225.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.000000 0.000000 0.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd E:\\GameDev\\_Done\\Gemastik 14\\Textures\\Ela Eye 1.png
+map_d E:\\GameDev\\_Done\\Gemastik 14\\Textures\\Ela Eye 1.png
+
+newmtl Eyebrow
+Ns 225.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd E:\\GameDev\\_Done\\Gemastik 14\\Textures\\Ela Eyebrow 2.png
+map_d E:\\GameDev\\_Done\\Gemastik 14\\Textures\\Ela Eyebrow 2.png
+
+newmtl Hair
+Ns 323.999994
+Ka 1.000000 1.000000 1.000000
+Kd 0.000000 0.000960 0.067799
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd E:\\GameDev\\_Done\\Gemastik 14\\Substance Painter\\Ela Model_Hair_BaseColor.png
+
+newmtl Mouth
+Ns 225.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.000000 0.000000 0.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd E:\\GameDev\\_Done\\Gemastik 14\\Textures\\Mouth_Smile.png
+map_d E:\\GameDev\\_Done\\Gemastik 14\\Textures\\Mouth_Smile.png

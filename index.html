@@ -17,6 +17,8 @@
   <a-asset-item id="char2" src="/tugas-webxr-farrelmt/Assets/Models/char2.gltf"></a-asset-item>
   <a-asset-item id="char3" src="/tugas-webxr-farrelmt/Assets/Models/char3.gltf"></a-asset-item>
   <a-asset-item id="char4" src="/tugas-webxr-farrelmt/Assets/Models/char4.gltf"></a-asset-item>
+  <a-asset-item id="kar1" src="/tugas-webxr-farrelmt/Assets/Models/karakter.obj"></a-asset-item>
+  <a-asset-item id="kar1mtl" src="/tugas-webxr-farrelmt/Assets/Models/karakter.mtl"></a-asset-item>
 </a-assets>
 
 
@@ -24,8 +26,8 @@
   <a-scene vr-mode-ui="enabled:false;" embedded arjs='detectionMode: mono_and_matrix; matrixCodeType: 3x3;' gesture-detector>      
       <!-- <a-image src="#logo" position="-4 2 -10" width="2" height="1"></a-image>   -->
 
-      <a-marker preset='hiro' url="/tugas-webxr-farrelmt/Assets/Patterns/pattern-char1.patt">
-        <a-entity gltf-model="#char1" position="0 0 0" rotation="0 0 0" scale="1 1 1" gesture-handler
+      <a-marker preset='hiro'>
+        <a-entity obj-model="obj:#kar1; mtl:#kar1mtl" position="0 0 0" rotation="0 0 0" scale="1 1 1" gesture-handler
         animation__rotate = "property:rotation; from:0 0 0 ; to: 0 360 0; startEvents: mouseenter;"></a-entity>
       </a-marker>
 
